@@ -15,9 +15,9 @@ after_success:
     - docker build -t deepaksivaramanpandi/multi-server ./server
     - docker build -t deepaksivaramanpandi/multi-worker ./worker
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-    -docker push deepaksivaramanpandi/multi-client
-    -docker push deepaksivaramanpandi/multi-nginx
-    -docker push deepaksivaramanpandi/multi-server
-    -docker push deepaksivaramanpandi/multi-worker
+    - docker push deepaksivaramanpandi/multi-client
+    - docker push deepaksivaramanpandi/multi-nginx
+    - docker push deepaksivaramanpandi/multi-server
+    - docker push deepaksivaramanpandi/multi-worker
 
 
