@@ -11,13 +11,13 @@
             "name": "server",
             "image": "deepaksivaramanpandi/multi-server",
             "essential": false,
-            "memory": "128"
+            "memory": 128
         },
         {
             "name": "worker",
             "image": "deepaksivaramanpandi/multi-worker",
             "essential": false,
-            "memory": "128"
+            "memory": 128
         },
         {
             "name": "nginx",
@@ -30,7 +30,7 @@
                 }
             ],
             "links": ["client", "server"],
-            "memory": "128"
+            "memory": 128
         }
     ]
 }
